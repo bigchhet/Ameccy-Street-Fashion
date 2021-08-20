@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Ameccy | Street Fashion</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <!----------------navigation bar----------------------------->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/ameccy_pics/DFE358CD-F34D-4C9A-8D22-3F1F08C2CDDD.png" width="200" alt="logo" />
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.cshtml">Home</a></li>
+                    <li><a href="products.cshtml">Product</a></li>
+                    <li><a href="about.cshtml">About</a></li>
+                    <li><a href="contact.cshtml">Contact</a></li>
+                    <li><a href="account.cshtml">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="../img/cart.png" width="30" height="30" alt="cart" />
+
+            </a>
+            <img src="../img/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+    </div>
+
+    <!-----------------contact page---------------------->
+    <div class="contact-container">
+        <div class="container">
+            <div class="testimonial">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-3">
+                            <h1>Contact by Cell</h1>
+                            <p id="contact-stuff">714-203-6306</p> <!--utilized random cell number generator-->
+                        </div>
+                        <div class="col-3">
+                            <h1>Contact by Email</h1>
+                            <p id="contact-stuff">ameccy@ecommerce.com</p>
+                        </div>
+                        <div class="col-3">
+                            <h1>Office Location</h1>
+                            <p id="contact-stuff">1119 8th Ave, Seattle, WA 98101</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <!----------------footer------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios devices.</p>
+                    <div class="app-logo">
+                        <img src="../img/play-store.png" />
+                        <img src="../img/app-store.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../img/ameccy_pics/DFE358CD-F34D-4C9A-8D22-3F1F08C2CDDD.png" width="200" alt="logo" />
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebbok</li>
+                        <li>Twitter</li>
+                        <li><a href="https://www.instagram.com/sosickvtg/">Instagram</a></li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright 2020 - Ameccy</p>
+        </div>
+    </div>
+    <!-------------------------js for toggle menu--------------------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight == "200px";
+            }
+            else {
+                MenuItems.style.maxHeight == "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
